@@ -1,17 +1,54 @@
-
 version: 2
+
+sources:
+
+  - name: rockproject-489813
+    schema: projectrawdata
+    description: "Source BigQuery regroupant données musicales, concerts, artistes et boxscores."
+    tables:
+
+      - name: albums_51to00
+        identifier: "51to00 albums"
+        description: "Albums du dataset 51to00."
+
+      - name: artists_51to00
+        identifier: "51to00 artists"
+        description: "Artistes du dataset 51to00."
+
+      - name: classic_rock_tracks_1962_2024
+        identifier: "Classic Rock Tracks from 1962 to 2024"
+        description: "Titres rock classiques de 1962 à 2024."
+
+      - name: classic_popular_tracks_2009_2023
+        identifier: "Classic and popular tracks from top artists 20092023"
+        description: "Titres classiques et populaires d'artistes majeurs (2009–2023)."
+
+      - name: concert_2025_top10_hors_paris
+        identifier: "Concert 2025_Top10_villes_hors_paris"
+        description: "Top 10 des villes hors Paris pour les concerts 2025."
+
+      - name: genre_artist_boxscore
+        identifier: "Genre_artist_Boxscore"
+        description: "Boxscores par genre et artiste."
+
+      - name: paris_concert_2025
+        identifier: "Paris_concert_2025"
+        description: "Concerts prévus à Paris en 2025."
+
+      - name: spotify_2010_2019
+        identifier: "Spotify 2010-2019"
+        description: "Données Spotify de 2010 à 2019."
+
+      - name: box_scores_all
+        identifier: "box_scores_all"
+        description: "Boxscores complets tous artistes."
+
+      - name: top_developing_artists
+        identifier: "top_developing_artists"
+        description: "Artistes émergents les plus prometteurs."
 
 models:
     - name: my_first_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
-
-    - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
           - name: id

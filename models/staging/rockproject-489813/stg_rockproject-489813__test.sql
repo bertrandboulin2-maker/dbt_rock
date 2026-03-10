@@ -9,16 +9,9 @@ source as (
 renamed as (
 
     select
-        id,
-        real_name,
-        art_name,
-        role,
-        year_of_birth,
-        country,
-        city,
-        email,
-        zip_code
-
+        id
+     
+        
     from source
 
 )

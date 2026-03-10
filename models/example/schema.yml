@@ -46,13 +46,3 @@ sources:
       - name: top_developing_artists
         identifier: "top_developing_artists"
         description: "Artistes émergents les plus prometteurs."
-
-models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null

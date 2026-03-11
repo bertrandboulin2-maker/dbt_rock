@@ -1,0 +1,41 @@
+
+sources:
+
+  - name: projectrawdata
+    description: "Source BigQuery regroupant données musicales, concerts, artistes et boxscores."
+    tables:
+      - name: box_scores_all
+        identifier: "box_scores_all"
+        description: "Boxscores complets tous artistes."
+
+      - name: concert2025_top_frcity
+        identifier: "Concert2025_top_FRcity"
+        description: "Top concerts 2025 par ville française."
+
+      - name: genre_artist_boxscore
+        identifier: "Genre_artist_Boxscore"
+        description: "Données boxscore par genre et artiste."
+
+      - name: paris_concert_2025
+        identifier: "Paris_concert_2025"
+        description: "Concerts prévus à Paris en 2025."
+
+      - name: rock_1962_2024
+        identifier: "Rock_1962_2024"
+        description: "Historique des artistes rock de 1962 à 2024."
+
+      - name: spotify_2010_2019
+        identifier: "Spotify 2010-2019"
+        description: "Données Spotify entre 2010 et 2019."
+
+      - name: top_artist_2009_2023_spotify
+        identifier: "Top_Artist_2009_2023_Spotify"
+        description: "Top artistes Spotify entre 2009 et 2023."
+
+      - name: top_spotify_timeline_201019
+        identifier: "Top_spotify_timeline_201019"
+        description: "Timeline Spotify 2010–2019."
+
+      - name: top_developing_artists
+        identifier: "top_developing_artists"
+        description: "Artistes émergents selon Spotify et boxscores."

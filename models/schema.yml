@@ -39,3 +39,8 @@ sources:
       - name: top_developing_artists
         identifier: "top_developing_artists"
         description: "Artistes émergents selon Spotify et boxscores."
+
+
+      - name: top_artist_rock_caracteristics
+        identifier: "top_artist_rock_caracteristics"
+        description: "Caractéristiques pour top 52 artistes rock boxcsore"

@@ -7,7 +7,7 @@ FROM {{ source('projectrawdata', 'genre_artist_boxscore') }}
 GROUP BY Nom, Genre
 ORDER BY nbre_concert DESC)
 
-SELECT REGEXP_REPLACE(
+SELECT Nom , REGEXP_REPLACE(
             LOWER(TRIM(Nom)),
             r'[^a-z0-9\s]',
             ''

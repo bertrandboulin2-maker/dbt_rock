@@ -1,4 +1,0 @@
-SELECT *
-from {{ ref('Boxscore_Spotify_Genre_Followers') }}
-inner join {{ ref('Top50_rock_artists_characteristics') }}
-on artist_name = Nom 
